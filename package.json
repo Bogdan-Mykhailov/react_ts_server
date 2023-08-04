@@ -2,10 +2,10 @@
   "name": "react_ts_server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "app.ts",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "nodemon src/app.ts",
     "lint": "eslint --ignore-path .gitignore",
     "format": "prettier --write . --ignore-path .gitignore",
     "fix-style": "npm run format && npm run lint -- --fix",
