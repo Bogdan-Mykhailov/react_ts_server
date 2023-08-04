@@ -4,8 +4,8 @@ import express from 'express';
 import http from 'http';
 import { Server } from 'socket.io';
 
-const app = express();
-const server = http.createServer(app);
+const index = express();
+const server = http.createServer(index);
 const io = new Server(
   server,
   {
@@ -34,7 +34,7 @@ io.on('connection', (socket) => {
   });
 });
 
-app.use((req, res) => {
+index.use((req, res) => {
   res.send('Hello World!');
 });
 
