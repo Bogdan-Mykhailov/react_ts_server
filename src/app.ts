@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
 });
 
 app.use((req, res) => {
-  res.send('Hello World');
+  res.send('Hello World!');
 });
 
 server.listen(PORT, () => {
